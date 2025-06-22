@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d5c9c1bba3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <img src = "myImages/MushLogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1> Howdy, I'm <span>Mushahid</span><br> from Texas</h1>
+        </div>
+    </div>
+</div>
+<!------------about-->
+<div id = "about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="myImages/MyBackgroundCorrectRotate.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Mushahid Osman. I recently moved from Texas to NYC to break into the tech scene and grow as a front-end engineer and AI developer. With a background in Math and Data Science, I build clean web interfaces and intelligent machine learning apps. I'm currently looking for roles where I can help create smart, impactful products.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Crafting clean, responsive interfaces with a focus on usability and user experience.</li>
+                        <li><span>Web Development</span><br>Building responsive, modern websites using HTML, CSS, JavaScript, and React.</li>
+                        <li><span>AI & Machine Learning</span><br>Training ML models using Python, Scikit-learn, and real-world datasets for insights and predictions. </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025-Current</span><br>Logistics Design Analyst at Pfizer.</li>
+                        <li><span>2024-Current</span><br> Freelance Software Engineer/Developer</li>
+                        <li><span>2023-2025</span><br>SAT Math Teacher at KD College Prep</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024-Currently Pursuing</span><br>MS in Data Science from UT Austin</li>
+                        <li><span>2024</span><br>Responsive web Design Certificate at FreeCodeCamp</li>
+                        <li><span>2022</span><br>BS in Math from University of Toledo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------services----------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Writing efficient, modular code to build dynamic, mobile-friendly web apps.</p>
+                <a href="https://github.com/Mushahid1999" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Blending aesthetic design with functional flow to elevate user engagement</p>
+                <a href="https://github.com/Mushahid1999" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>AI/Machine Learning Implementation</h2>
+                <p>Developing intelligent models that learn from data to solve real-world problems.</p>
+                <a href="https://github.com/Mushahid1999" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------portfolio----------- -->
+<div id="portfolio">
+    <div class = "container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="myImages/ThryvActualSquare.png">
+                <div class="layer">
+                    <h3>Thryvon</h3>
+                    <p>Front-end fitness website for inluencer, Suhail Haque</p>
+                    <a href="https://thryvon.co/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="myImages/WatchActualSquare.png">
+                <div class="layer">
+                    <h3>TimeSwap</h3>
+                    <p>Your AI-powered watch flipping advisor (In Progress...)</p>
+                    <a href="https://github.com/Mushahid1999" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="myImages/CalorieActualSquare.png">
+                <div class="layer">
+                    <h3>Calorie Counter</h3>
+                    <p>Track calories with this software</p>
+                    <a href="https://github.com/Mushahid1999/CalorieCounter" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href = "https://github.com/Mushahid1999" target="_blank" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!-- --------------------contact----------- -->
+
+<div id = "contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mushahid1999@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/LilMush2K" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/mushahid-o-98936b117?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLEnatu%2BuRkuvwPNjaPGp%2FA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Mushahid1999" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="myImages/MushahidOsmanFinalResEditablePDF.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type ="text" name="Name" placeholder="Your Name" required>
+                    <input type ="email" name="Email" placeholder="Your Email" required>
+                    <textarea name = "Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Mushahid Osman</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxLKWjR68E-dAOEUX-uE9rN-hZAuxqkihxyqpMwN7ru1ASfH8bbO7yEbFmaieDg9Qs/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
